@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0060)http://yaksoy.github.io/introvc/assignment1/hw1template.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CMPT 361 HW1 - Paniz Najjarrezaparast</title>
+
+</head> <body>
+
+<h2>CMPT 361 - Homework 1</h2>
+
+<p>Name: <b>Paniz Najjarrezaparast</b></p>
+<p>Student No: <b>301373241</b></p>
+<p>Date: January 29, 2023</p>
+
+<h4>Honor statement:</h4>
+<p>I have not cheated in any way when doing this assignment, I did it on my own. I may have asked questions about the assignment on Coursys, I know that’s totally fine and even encouraged. I also already know that this class is graded on a curve. I realize that if I cheat and by some miracle not get caught, any increase in my grade will in turn shift the curve and result in lower grades for my classmates. Any undeserved extra grade would come at the cost of all others. That’s horrible! I would never do it.</p>
+
+<h4>1: Take two photographs</h4>
+<img src="./CMPT361_A1_files/HP.png" alt="HP" width="300" height="300">
+<img src="./CMPT361_A1_files/LP.png" alt="LP" width="300" height="300">
+
+
+<h4>2: Compute frequency representations</h4>
+<img src="./CMPT361_A1_files/HP-freq.png" alt="HP-freq" width="300" height="300">
+<img src="./CMPT361_A1_files/LP-freq.png" alt="LP-freq" width="300" height="300">
+
+<h4>3: Visualize kernels</h4>
+<img src="./CMPT361_A1_files/gaus-surf.png" alt="gaus-surf" width="300" height="300">
+<img src="./CMPT361_A1_files/dog-surf.png" alt="dog-surf" width="300" height="300">
+<br><br>
+<img src="./CMPT361_A1_files/HP-filt.png" alt="HP-filt" width="300" height="300">
+<img src="./CMPT361_A1_files/HP-filt-freq.png" alt="HP-filt-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT361_A1_files/LP-filt.png" alt="LP-filt" width="300" height="300">
+<img src="./CMPT361_A1_files/LP-filt-freq.png" alt="LP-filt-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT361_A1_files/HP-dogfilt.png" alt="HP-dogfilt" width="300" height="300">
+<img src="./CMPT361_A1_files/HP-dogfilt-freq.png" alt="HP-dogfilt-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT361_A1_files/LP-dogfilt.png" alt="LP-dogfilt" width="300" height="300">
+<img src="./CMPT361_A1_files/LP-dogfilt-freq.png" alt="LP-dogfilt-freq" width="300" height="300">
+
+<h4>4: Anti-aliasing</h4>
+<img src="./CMPT361_A1_files/HP-sub2.png" alt="HP-sub2" width="300" height="300">
+<img src="./CMPT361_A1_files/HP-sub2-freq.png" alt="HP-sub2-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT361_A1_files/LP-sub2.png" alt="LP-sub2" width="300" height="300">
+<img src="./CMPT361_A1_files/LP-sub2-freq.png" alt="LP-sub2-freq" width="300" height="300">
+<p>
+    There was no aliasing in the low frequency image. Regarding HP, in the spatial domain, aliasing occurs all throughout the image. 
+    Specifically in the center right of the image, there is a circle of darker spots, with circular waves expanding outwards from it. 
+    On the bottom left of the image, there is aliasing in the form of short vertical lines. Lastly, at the top of the image
+    there are sporadic darker spots spread across, which didn't exist in the original image.
+    In the frequency domain, there is some corruption on the center left and
+    right edges. In the original image, there were high frequency components
+    right in the middle of the edges, but in the sampled image, the high frequency
+    components instead show up around that spot (above and below the center of
+    the edges). Generally, the high frequency areas (edges) of the sampled
+    image are corrupted as instead of being more concentrated in certain spots,
+    there are high frequencies spread all around.
+</p>
+
+<img src="./CMPT361_A1_files/HP-sub4.png" alt="HP-sub4" width="300" height="300">
+<img src="./CMPT361_A1_files/HP-sub4-freq.png" alt="HP-sub4-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT361_A1_files/LP-sub4.png" alt="LP-sub4" width="300" height="300">
+<img src="./CMPT361_A1_files/LP-sub4-freq.png" alt="LP-sub4-freq" width="300" height="300">
+<p>
+    There is no aliasing in LP. Regarding HP, in the spatial domain of the high frequency image, similar to the previous image subsampled by 2, there is
+    a darker circle towards the center right. To the left of the image, there
+    are multiple curving waves. Lastly, towards the top right of the image
+    there are some horizontal waves, as well as a sharper wave at the top
+    right, pointing left.
+    In the frequency domain, the high frequency components are very corrupted and show up spread around instead of in their original more concentrated spots.
+</p>
+
+<img src="./CMPT361_A1_files/HP-sub2-aa.png" alt="HP-sub2-aa" width="300" height="300">
+<img src="./CMPT361_A1_files/HP-sub2-aa-freq.png" alt="HP-sub2-aa-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT361_A1_files/HP-sub4-aa.png" alt="HP-sub4-aa" width="300" height="300">
+<img src="./CMPT361_A1_files/HP-sub4-aa-freq.png" alt="HP-sub4-aa-freq" width="300" height="300">
+<p>
+    I used a Gaussian filter of size 5 and standard deviation of 2 for the image subsampled by a factor of 2, and a filter of size 3 and 
+    standard deviation of 2 for the image subsampled by a factor of 4.
+    In both cases, the spatial domain has no aliasing anymore, there are no more waves or sporadic darker spots in the pattern.
+    In the frequency domain of sub2, a majority of the high frequencies have been filtered out so we don't see any aliasing.
+    In the frequency domain of sub4, there are still some high frequency components but they are more concentrated and accurate.
+</p>
+
+<h4>5: Canny edge detection thresholding</h4>
+
+<img src="./CMPT361_A1_files/HP-canny-optimal.png" alt="HP-canny-optimal" width="500" height="500">
+<br><br>
+<img src="./CMPT361_A1_files/HP-canny-lowlow.png" alt=" HP-canny-lowlow" width="300" height="300">
+<img src="./CMPT361_A1_files/HP-canny-highlow.png" alt=" HP-canny-highlow" width="300" height="300">
+<br><br>
+<img src="./CMPT361_A1_files/HP-canny-lowhigh.png" alt=" HP-canny-lowhigh" width="300" height="300">
+<img src="./CMPT361_A1_files/HP-canny-highhigh.png" alt=" HP-canny-highhigh" width="300" height="300">
+<p>For HP, I choose the optimal thresholds of 0.2 and 0.5 because I can see all edges throughout the main pattern of the chair,
+    as well as the edge marking the dark gap at the top of the image. Also, the squares of the pattern grow smaller towards the top of the image,
+    and that is captured well, unlike in HH or even LH at the top right corner.</p>
+
+<img src="./CMPT361_A1_files/LP-canny-optimal.png" alt="LP-canny-optimal" width="500" height="500">
+<br><br>
+<img src="./CMPT361_A1_files/LP-canny-lowlow.png" alt=" LP-canny-lowlow" width="300" height="300">
+<img src="./CMPT361_A1_files/LP-canny-highlow.png" alt=" LP-canny-highlow" width="300" height="300">
+<br><br>
+<img src="./CMPT361_A1_files/LP-canny-lowhigh.png" alt=" LP-canny-lowhigh" width="300" height="300">
+<img src="./CMPT361_A1_files/LP-canny-highhigh.png" alt=" LP-canny-highhigh" width="300" height="300">
+<p>Regarding LP, I choose the optimal thresholds of 0.07 and 0.1 because I can see an accurate outline of the skinnier plants towards the right of 
+    the image without having too much detail in the darker section just below the plants. For instance, the stem of the tallest plant in the middle right of the 
+    image is detected, which is not true in the LH or HH images. The LL image has too many little edges detected, for instance under that same tall plant towards the 
+    center right. A better edge detection method might detect the edges of the stems of all the skinny plants, and the mountain-shaped curve made by a stem in the middle of the large left bush.
+    </p>
+
+
+ </body></html>
