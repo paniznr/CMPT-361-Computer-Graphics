@@ -3,7 +3,7 @@ This repository contains two computer graphics and two computer vision projects.
 
 Project 1
 Filter images and detect edges.
-![FilterImage](LP-dogfilt.png)
+![FilterImage](Project%201/CMPT361_A1_files/LP-dogfilt.png)
 
 Project 2
 Creates panorama image from four seperate images.
