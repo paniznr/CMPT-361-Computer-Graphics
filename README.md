@@ -3,12 +3,12 @@ This repository contains two computer graphics and two computer vision projects.
 
 Project 1
 
-Filter images and detect edges. For more info, open "Report1.html" in any browser!
+Filtered images and detected edges using Canny edge detection. For more info, open "Report1.html" in any browser!
 
 
 Project 2
 
-Creates panorama image from four seperate images. For more info, open "Report2.html" in any browser!
+Created panorama image from four seperate images. For more info, open "Report2.html" in any browser!
 
 
 
