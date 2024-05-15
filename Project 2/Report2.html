@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0060)http://yaksoy.github.io/introvc/assignment2/hw2template.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CMPT 361 HW2 - Paniz Najjarrezaparast</title>
+
+</head> <body>
+
+<h2>CMPT 361 - Homework 2</h2>
+
+<p>Name: <b>Paniz Najjarrezaparast</b></p>
+<p>Student No: <b>301373241</b></p>
+<p>Date: February 15, 2023</p>
+
+<h4>Honor statement:</h4>
+<p>I have not cheated in any way when doing this assignment, I did it on my own. I may have asked questions about the assignment on Coursys, I know that’s totally fine and even encouraged. I also already know that this class is graded on a curve. I realize that if I cheat and by some miracle not get caught, any increase in my grade will in turn shift the curve and result in lower grades for my classmates. Any undeserved extra grade would come at the cost of all others. That’s horrible! I would never do it.</p>
+
+<h4>1: Take four photograph pairs or sets of 4.</h4>
+
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-im1.png" alt="im1" width="300">
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-im2.png" alt="im2" width="300">
+<br><img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-im3.png" alt="im3" width="300">
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-im4.png" alt="im4" width="300">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-im1.png" alt="im1" width="300">
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-im2.png" alt="im2" width="300">
+<br><img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-im3.png" alt="im3" width="300">
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-im4.png" alt="im4" width="300">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S3-im1.png" alt="im1" width="300">
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S3-im2.png" alt="im2" width="300">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S4-im1.png" alt="im1" width="300">
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S4-im2.png" alt="im2" width="300">
+<br><br>
+
+<h4>2: FAST feature detector</h4>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-fast.png" alt="S1-fast" width="300">
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-fast.png" alt="S2-fast" width="300">
+
+<h4>2: FASTR feature detector</h4>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-fastR.png" alt="S1-fastR" width="300">
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-fastR.png" alt="S2-fastR" width="300">
+
+<p>The average computation time for FAST was 1.6945s and the time for FASTR was 0.0323s. So, FASTR was much quicker than FAST (around 52 times faster). This makes sense since FASTR only evaluates the Harris cornerness metric when FAST found a feature at a point, reducing the number of operations greatly.</p>
+
+<h4>3: Point description and matching</h4>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-fastMatch.png" alt="S1-fastMatch" width="600">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-fastRMatch.png" alt="S1-fastRMatch" width="600">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-fastMatch.png" alt="S2-fastMatch" width="600">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-fastRMatch.png" alt="S2-fastRMatch" width="600">
+
+<p>Here, the performance difference was similar but less extreme, with an average FAST computation time of 6.569s and average FASTR time of 0.3808s. Again, FASTR had fewer points recognized as corners, which led to fewer operations. The performance difference being less extreme compared to the above results may be because there was overhead introduced in functions like extractFeatures() here, when matching.</p>
+<h4>4: RANSAC and Panoramas</h4>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-panorama.png" alt="S1-panorama" width="600">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-panorama.png" alt="S2-panorama" width="600">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S3-panorama.png" alt="S3-panorama" width="600">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S4-panorama.png" alt="S4-panorama" width="600">
+
+<p>For FAST, I used a confidence of 99, 3000 iterations, and a distance of 5. For FASTR, I used a confidence of 99, 2000 iterations, and a distance of 5. FASTR worked better than FAST, due to its narrowing down of features. </p>
+
+<h4>5: Bonus</h4>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S1-panoramaBig.png" alt="S1-panorama" width="600">
+<br><br>
+<img src="./CMPT 361 HW2 - Paniz Najjarrezaparast_files/S2-panoramaBig.png" alt="S2-panorama" width="600">
+
+
+<p>I used the same parameters as in step 4.</p>
+
+ </body></html>
